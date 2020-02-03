@@ -87,3 +87,15 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
+
+#error_page {
+  width: 30%;
+  background-color: #fff;
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+
+  p {
+    padding: 10px;
+  }
+}
