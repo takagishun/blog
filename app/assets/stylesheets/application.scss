@@ -98,6 +98,8 @@ header {
   margin-top: 45px;
   margin-right: auto;
   margin-left: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media screen and (max-width: 800px) {
