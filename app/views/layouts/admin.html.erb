@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"></head>
+<body>
+<% if logged_in? %>
+  <p><%= link_to 'logout', admin_logout_path, method: :delete %></p>
+<% end %>
+<p><%= link_to 'ブログへ', posts_path, method: :get %></p>
+<div class='container'>
+  <% if flash.notice.present? %>
+    <p class='alert alert-success'><%= flash.notice %></p>
+  <% end %>
+  <% if flash.alert.present? %>
+    <p class='alert alert-danger'><%= flash.alert %></p>
+  <% end %>
+  <%= yield %>
+</div>
+</body>
+</html>

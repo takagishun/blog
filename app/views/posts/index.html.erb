@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div id='article-lists'>
+  <ul>
+    <% @posts.each do |post| %>
+      <li class='article-list orange-shadow'>
+        <h2 class='article-title'><%= post.title %></h2>
+        <%= image_tag "#{post.image}", :class => 'article-img' %>
+        <p class='excerpt'><%= post.excerpt %></p>
+        <p class='read-more'><%= link_to '続きを読む', post, { class: 'orange-bottom black-shadow' } %></a></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

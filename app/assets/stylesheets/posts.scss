@@ -1,0 +1,162 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.orange-bottom {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(-135deg, #e65c00, #F9D423);
+  border-radius: 7.5px;
+  padding: 2px 14px;
+}
+
+.orange-shadow {
+  box-shadow: 0 10px 30px 2px rgba(254, 204, 204, 4);
+}
+
+.black-shadow {
+  box-shadow: 0 10px 30px 2px rgba(146, 144, 144,.4);
+}
+
+#article-lists {
+  margin: auto;
+  width: 60%;
+
+  .article-list {
+    margin-bottom: 40px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    color: #7B7B7B;
+
+    .article-title {
+      display: inline-block;
+      color: #7B7B7B;
+      font-size: 18px;
+      margin: 30px;
+    }
+
+    .article-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .excerpt {
+      font-size: 14px;
+      margin: 30px 30px 0 30px;
+    }
+
+    .read-more {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+  }
+}
+
+
+.posted-date {
+  display: inline-block;
+  color: #7B7B7B;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+#article-operation {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-size: 0;
+
+  li {
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  .article-pre {
+    text-align: left;
+  }
+
+  .back-to-article-lists {
+    text-align: center;
+  }
+
+  .article-next {
+    text-align: right;
+  }
+}
+
+#article {
+  width: 75%;
+  margin: auto;
+  background-color: #fff;
+
+  #article-date {
+    color: #7B7B7B;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  > #article-title {
+    font-size: 25px;
+    color: #7B7B7B;
+    line-height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .article-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  > .article-body {
+
+    padding: 40px 30px;
+    color: #37302a;
+
+    .twitter-tweet {
+      margin: 30px 0 40px 0 !important;;
+    }
+
+    .tweet-text {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin-bottom: 40px;
+      ol, ul {
+        margin-left: 2em;
+      }
+      li {
+        list-style: decimal;
+      }
+    }
+
+    > h1 {
+      border-left: 6px solid;
+      border-image: linear-gradient(to bottom, #e65c00 0%, #F9D423 100%);
+      padding: 6px 20px 6px 20px;
+      font-size: 20px;
+      line-height: 36px;
+      //background: #f7f7f7;
+      color: #333;
+      margin: 50px 0 20px 0;
+    }
+
+    > h1 {
+      border-image-slice: 1;
+    }
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+}
