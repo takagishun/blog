@@ -5,7 +5,7 @@
   <p id='article-date'>
     <%= @post.created_at.strftime('%Y/%m/%d') %>
     <% if @post.created_at.to_date != @post.updated_at.to_date %>
-      (<%= @post.updated_at.strftime('%Y/%m/%d') %>)
+      (更新日: <%= @post.updated_at.strftime('%Y/%m/%d') %>)
     <% end %>
   </p>
   <h1 id='article-title'><%= @post.title %></h1>
