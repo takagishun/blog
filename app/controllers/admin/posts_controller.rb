@@ -44,7 +44,7 @@ module Admin
 		end
 
 		def set_post
-			@post = Post.find(params[:id])
+			@post = Post.find_by(url: params[:url])
 		end
 	end
 end

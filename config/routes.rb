@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :posts, param: :url
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 	namespace :admin do
-		resources :posts
+		resources :posts, param: :url
 		get 'login', to: 'sessions#new'
 		post 'login', to: 'sessions#create'
 		delete 'logout', to: 'sessions#destroy'
