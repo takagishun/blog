@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <%= display_meta_tags(default_meta_tags) %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  </head>
-  <body>
-  <% if logged_in? %>
-    <p id='go-to-admin'><%= link_to 'admin画面へ', admin_posts_path %></p>
-  <% end %>
-  <% if flash.notice.present? %>
-    <p class='alert alert-success'><%= flash.notice %></p>
-  <% end %>
-  <% if flash.alert.present? %>
-    <p class='alert alert-danger'><%= flash.alert %></p>
-  <% end %>
-  <%= render 'layouts/header' %>
-  <div class='container'>
-    <%= yield %>
-  </div>
-  </body>
+</head>
+<body>
+<% if logged_in? %>
+  <p id='go-to-admin'><%= link_to 'admin画面へ', admin_posts_path %></p>
+<% end %>
+<% if flash.notice.present? %>
+  <p class='alert alert-success'><%= flash.notice %></p>
+<% end %>
+<% if flash.alert.present? %>
+  <p class='alert alert-danger'><%= flash.alert %></p>
+<% end %>
+<%= render 'layouts/header' %>
+<div class='container'>
+  <%= yield %>
+</div>
+</body>
 </html>

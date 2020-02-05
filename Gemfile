@@ -25,6 +25,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'carrierwave'
 gem 'fog'
 
+# SEO対策
+gem 'meta-tags'
+
 # Use Active Storage variant
 #gem 'image_processing', '~> 1.2'
 

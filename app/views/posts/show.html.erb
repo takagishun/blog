@@ -1,3 +1,5 @@
+<% set_meta_tags title: @post.title, description: @post.body.to_s.gsub(/\r\n|\r|\n|\s|\t/, ""), og: { image: image_url(@post.image) }, twitter: { image: image_url(@post.image) } %>
+
 <ul id='article-operation'>
   <li class='back-to-article-lists'><%= link_to '記事一覧へ', posts_path, { class: 'orange-bottom orange-shadow' } %></li>
 </ul>
