@@ -4,7 +4,7 @@
 <p><strong>Url:</strong></p>
 <p><%= @post.url %></p>
 <p><strong>Image:</strong></p>
-<p><%= image_tag("#{@post.image}") %></p>
+<p><%= image_tag @photo.image.to_s %></p>
 <p><strong>Excerpt:</strong></p>
 <p><%= @post.excerpt %></p>
 <p><strong>Body:</strong></p>

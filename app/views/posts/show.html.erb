@@ -9,6 +9,6 @@
     <% end %>
   </p>
   <h1 id='article-title'><%= @post.title %></h1>
-  <%= image_tag "#{@post.image}", :class => 'article-img' %>
+  <%= image_tag @photo.image.to_s, :class => 'article-img' %>
   <div class='article-body'><%= @post.body.html_safe %></div>
 </div>
