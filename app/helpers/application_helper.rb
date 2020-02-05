@@ -10,8 +10,8 @@ module ApplicationHelper
 			canonical: request.original_url,
 			separator: '|',
 			icon: [
-				{ href: asset_path('icon.jpg')},
-				{ href: asset_path('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
+				{ href: image_url('icon.jpg')},
+				{ href: image_url('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
 			],
 			og: {
 				site_name: :site,
@@ -19,13 +19,13 @@ module ApplicationHelper
 				description: :description,
 				type: 'website',
 				url: request.original_url,
-				image: asset_url('default.jpg'),
+				image: image_url('default.jpg'),
 				local: 'ja-JP',
 			},
 			twitter: {
 				card: 'summary_large_image',
 				site: '@_shuntakagi',
-				image: asset_url('default.jpg'),
+				image: image_url('default.jpg'),
 			}
 		}
 	end
