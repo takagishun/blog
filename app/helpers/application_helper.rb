@@ -19,13 +19,13 @@ module ApplicationHelper
 				description: :description,
 				type: 'website',
 				url: request.original_url,
-				image: asset_path('default.jpg'),
+				image: asset_url('default.jpg'),
 				local: 'ja-JP',
 			},
 			twitter: {
 				card: 'summary_large_image',
 				site: '@_shuntakagi',
-				image: asset_path('default.jpg'),
+				image: asset_url('default.jpg'),
 			}
 		}
 	end
